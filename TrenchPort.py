@@ -6,19 +6,7 @@ try:
 except:
     pass
 #Port: Marianas Trench
-# Dock port: Sludge or oil. 
-    #1.Fill port report;
-    #2.interact with humanoid that inhabits port
-    #I visit multiple houses and eat many kinds of food food, if like food 
-    # if they hate; gain 10 terror and no hunger loss
-    # if they like the food you; lose hunger and get to meet king
-    #  king = quest to save tribe
-                    #accept = go on quest
-                    #deny = banished from village
-    #3plore town, always friendly
-    #ask to give offer
-    # if fail offer they attack you die
-    # if pass reduce terror and reduce hunger, reduce 1 crew member
+
 prompt = '> '
 typing_speed = 90 #wpm
 Character_Attributes = []
@@ -241,14 +229,14 @@ def explore_town():
         print ("""
                 What do you do?(Pick 1 or 2):                                     
                 \t1. Go to the Village King's hut
-                \t2. Visit place of interest(Not Working, Coming Soon.)
+                \t2. Visit place of interest
                 \t3. Go back to port.""")
         town_explore = input(prompt)
         if town_explore == "1" :
                 interact_king()
                 break
         elif town_explore == "2":
-                explore_town()
+                place_of_interest()
         elif town_explore == "3":
                 goback()
                 break
@@ -258,7 +246,7 @@ def explore_town():
 def interact_king():
     while True:
         lights('gold', 160)
-        slow_type ("\nGreetings I am King MAhtuPiChu.")
+        slow_type ("\nGreetings I am King Kram.")
         if 'filled up' in Character_Attributes:
             slow_type ("\n\tAh I see my people have deemed you worthy, not many meet them")
             slow_type ("\tand live to tell the tale of another day. I then have a request for you.")
@@ -289,28 +277,35 @@ def interact_king():
             slow_type ("\tGuards show him the door!")
             goback()
    
-
-def explore_dungeon():
-    print ("\nYou will explore dungeon here. Map found when doing port report will help here")
-    print ("You will go through the dungeon to find the tools the king needs\n")
-    print ("The dungeon is not yet implemented")
-    print ("""
-                What do you do?(Pick 1 or 2):                                     
-                \t1. Navigate through dungeon command 1
-                \t2. Navigate through dungeon command 1
-                \t3. Go back to town""")
-                                
-    dungeon_explore = input(prompt)
-        
-    if dungeon_explore == "1" :
-        explore_dungeon()            
-    elif dungeon_explore == "2":
-        explore_dungeon()            
-    elif dungeon_explore == "3":
+def place_of_interest():
+    while True:    
+        print ("\nPlace of interest dialogue")
+        typewriter()
+        slow_type ("\n\tDialogue")
         goback()
+   
+def explore_dungeon():
+    while True:    
+        print ("\nYou will explore dungeon here. Map found when doing port report will help here")
+        print ("You will go through the dungeon to find the tools the king needs\n")
+        print ("The dungeon is not yet implemented")
+        print ("""
+                    What do you do?(Pick 1 or 2):                                     
+                    \t1. Navigate through dungeon command 1
+                    \t2. Navigate through dungeon command 1
+                    \t3. Go back to town""")
+                                    
+        dungeon_explore = input(prompt)
+            
+        if dungeon_explore == "1" :
+            explore_dungeon()            
+        elif dungeon_explore == "2":
+            explore_dungeon()            
+        elif dungeon_explore == "3":
+            goback()        
+        else:
+            print("Invalid command")
+       
         
-    else:
-        print("Invalid command")
-
 marianas_port()
 
