@@ -8,7 +8,8 @@ The changelog was created 3-4 weeks after the project began so changes before th
 ### Added
 Add place of interest area. No dialogue just a place holder.
 
-Also fixed some mi
+###Changed
+Also fixed some minor looping issues.
 
 
 ##2016-03-31
