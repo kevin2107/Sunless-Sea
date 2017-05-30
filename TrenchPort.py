@@ -192,7 +192,7 @@ def interact():
         if village == 'no':
             goback()
         else:
-            print ("%s is an Invalid Command" % Dock_port)
+            print ("Invalid command")
                      
 def filled_up():        
     while True:
