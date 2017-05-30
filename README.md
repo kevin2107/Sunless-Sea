@@ -8,4 +8,9 @@ began this as a side project. I'm still learning and have alot of work to do on 
 it's been fun so far.
 
 I've recently added intergration of hue lights using phue to add some depth. If you have hue lights
-make sure their around you!
+make sure their around you! Right now it only works with the first 3 bulbs in your system.
+
+I claim no intellectuall rights or anything related to Failbetter's Sunless Sea.
+This is purely for fun.
+
+-K
