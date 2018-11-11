@@ -1,4 +1,4 @@
-##Read Me
+## Read Me
 
 This is a small adventure game I am making based off Failbetter Stuido's game Sunless Sea.
 
