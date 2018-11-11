@@ -12,5 +12,3 @@ make sure their around you! Right now it only works with the first 3 bulbs in yo
 
 I claim no intellectuall rights or anything related to Failbetter's Sunless Sea.
 This is purely for fun.
-
--K
